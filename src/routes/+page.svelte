@@ -2,14 +2,32 @@
 	import Quote from './Quote.svelte';
 	import Button from './Button.svelte';
 	import Footer from '$lib/Footer.svelte';
+	import { onMount } from 'svelte';
+
+	let quoteText = '';
+	let quoteAuthor = '';
+	let quoteGenre = '';
+
+	onMount(async function () {
+		newQuote();
+	});
+
+	async function newQuote() {
+		const res = await fetch('https://quote-garden.herokuapp.com/api/v3/quotes');
+		const data = await res.json();
+		const quoteData = data['data'];
+		quoteText = quoteData['quoteText'];
+		quoteAuthor = quoteData['quoteAuthor'];
+		quoteGenre = quoteData['quoteGenre'];
+	}
 </script>
 
 <div class="page-wrapper">
 	<div class="button-wrapper">
-		<Button />
+		<Button on:click={newQuote} />
 	</div>
 	<div class="quote-wrapper">
-		<Quote />
+		<Quote {quoteText} {quoteAuthor} {quoteGenre} />
 	</div>
 </div>
 

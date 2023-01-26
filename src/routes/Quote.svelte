@@ -1,8 +1,8 @@
 <script lang="ts">
 	export let quoteText =
 		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur deleniti provident, nontempore dolores asperiores optio, iusto deserunt aut magnam odio consectetur voluptatum animivoluptatem hic modi aliquam laudantium minima!';
-	export let quoteSource = 'Caesar';
-	export let topic = 'Rome';
+	export let quoteAuthor = 'Caesar';
+	export let quoteGenre = 'Rome';
 </script>
 
 <div class="quote-wrapper">
@@ -10,10 +10,10 @@
 		{quoteText}
 	</div>
 	<div class="source pad">
-		{quoteSource}
+		{quoteAuthor}
 	</div>
 	<div class="topic pad">
-		{topic}
+		{quoteGenre}
 	</div>
 </div>
 
