@@ -23,6 +23,7 @@
 	.page-wrapper {
 		height: 100vh;
 		display: flex;
+		flex-direction: column;
 	}
 
 	.button-wrapper {

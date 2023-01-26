@@ -23,6 +23,7 @@
 	}
 	.quote-text {
 		border-left: 4px solid rgb(216, 216, 3);
+		font-size: large;
 	}
 
 	.source {
