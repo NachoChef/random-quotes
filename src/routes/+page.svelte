@@ -4,9 +4,10 @@
 	import Footer from '$lib/Footer.svelte';
 	import { onMount } from 'svelte';
 
-	let quoteText = '';
-	let quoteAuthor = '';
-	let quoteGenre = '';
+	let quoteText =
+		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur deleniti provident, nontempore dolores asperiores optio, iusto deserunt aut magnam odio consectetur voluptatum animivoluptatem hic modi aliquam laudantium minima!';
+	let quoteAuthor = 'Caesar';
+	let quoteGenre = 'Rome';
 
 	onMount(async function () {
 		newQuote();

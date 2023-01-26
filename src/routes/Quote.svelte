@@ -1,8 +1,7 @@
 <script lang="ts">
-	export let quoteText =
-		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur deleniti provident, nontempore dolores asperiores optio, iusto deserunt aut magnam odio consectetur voluptatum animivoluptatem hic modi aliquam laudantium minima!';
-	export let quoteAuthor = 'Caesar';
-	export let quoteGenre = 'Rome';
+	export let quoteText: string;
+	export let quoteAuthor: string;
+	export let quoteGenre: string;
 </script>
 
 <div class="quote-wrapper">
